@@ -1,3 +1,42 @@
 <resources>
-    <string name="app_name">LaboratorioDAM</string>
+    <string name="app_name">CompraVenta</string>
+    <string name="titulo"> Titulo</string>
+    <string name="tituloHint"> Titulo…</string>
+    <string name="descripcion"> Descripción (opcional)</string>
+    <string name="descripcionHint"> Descripción del producto…</string>
+    <string name="correo"> Correo de contacto</string>
+    <string name="correoHint"> Correo electronico…</string>
+    <string name="precio"> Precio</string>
+    <string name="precioHint"> Precio…</string>
+    <string name="categoria"> Categoria</string>
+    <string name="descuento"> Ofrecer descuento de envío       </string>
+    <string name="porc">%</string>
+    <string name="retiro"> Retiro en persona</string>
+    <string name="direccion"> Dirección de retiro</string>
+    <string name="direccionHint"> Dirección de retiro…</string>
+    <string name="terminos_y_condiciones"> Aceptar los terminos y condiciones</string>
+    <string name="publicar">PUBLICAR</string>
+
+    <!--
+    <string-array name="categorias">
+        <item>Categoria…</item>
+        <item>INDUMENTARIA</item>
+        <item>ELECTRONICA</item>
+        <item>ENTRETENIMIENTO</item>
+        <item>JARDIN</item>
+        <item>VEHICULOS</item>
+        <item>JUGUETES</item>
+    </string-array>
+    -->
+
+    <string name="mensajeTitulo">El campo de Titulo esta vacio. \n</string>
+    <string name="mensajePrecioVacio">El campo de Precio esta vacio. \n</string>
+    <string name="mensajeCategoria">No se ha seleccionado ninguna categoria. \n</string>
+    <string name="mensajeDireccion">El campo de Direccion de retiro esta vacio. \n</string>
+    <string name="mensajeDescuento">Por favor seleccione un porcentaje mayor a 0 o quite la opcion de ofrecer descuento de envio. </string>
+    <string name="mensajePrecioMenor">El precio ingresado debe ser mayor a 0. </string>
+    <string name="mensajeCorreo">El correo electronico debe tener al menos una @ y 3 letras luego. </string>
+    <string name="mensajeTextoCampo">Los campos Titulo, Descripción y Dirección solo admiten letras, números, comas, puntos o saltos de linea. </string>
+    <string name="mensajeExito">¡Publicación realizada con éxito!</string>
+
 </resources>

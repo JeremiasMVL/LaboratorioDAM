@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- a mejorar -->
+
+    <dimen name="tamFuenteTitulo">18sp</dimen>
+    <dimen name="tamFuenteEdit">16sp</dimen>
+    <dimen name="tamFuente3">14sp</dimen>
+    <dimen name="tamFuente4">24sp</dimen>
+
+</resources>

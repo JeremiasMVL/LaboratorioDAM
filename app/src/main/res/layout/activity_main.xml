@@ -1,18 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="@color/colorCampos"
+        android:textSize="@dimen/tamFuenteTitulo"
+        android:text="@string/titulo" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/tamFuenteEdit"
+        android:hint="@string/tituloHint" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorCampos"
+        android:textSize="@dimen/tamFuenteTitulo"
+        android:text="@string/descripcion" />
+
+    <EditText
+        android:id="@+id/editDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="@dimen/tamFuenteEdit"
+        android:hint="@string/descripcionHint" />
+
+    <TextView
+        android:id="@+id/correoContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorCampos"
+        android:textSize="@dimen/tamFuenteTitulo"
+        android:text="@string/correo" />
+
+    <EditText
+        android:id="@+id/editCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/tamFuenteEdit"
+        android:hint="@string/correoHint" />
+
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorCampos"
+        android:textSize="@dimen/tamFuenteTitulo"
+        android:text="@string/precio" />
+
+    <EditText
+        android:id="@+id/editPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/tamFuenteEdit"
+        android:hint="@string/precioHint" />
+
+    <TextView
+        android:id="@+id/categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorCampos"
+        android:textSize="@dimen/tamFuenteTitulo"
+        android:text="@string/categoria" />
+
+    <Spinner
+        android:id="@+id/spinnerCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamFuenteTitulo"
+        android:entries="@array/categorias" />
+
+    <Switch
+        android:id="@+id/switchDescuento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamFuente3"
+        android:textColor="@color/colorCampos"
+        android:text="@string/descuento" />
+
+    <SeekBar
+        android:id="@+id/seekBarDescuento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <!--
+    <TextView
+        android:id="@+id/porcentajeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    -->
+
+    <CheckBox
+        android:id="@+id/checkBoxRetiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamFuenteTitulo"
+        android:textColor="@color/colorCampos"
+        android:text="@string/retiro" />
+
+    <TextView
+        android:id="@+id/direccionRetiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorCampos"
+        android:textSize="@dimen/tamFuenteTitulo"
+        android:text="@string/direccion" />
+
+    <EditText
+        android:id="@+id/editDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/tamFuenteEdit"
+        android:hint="@string/direccionHint" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAceptarTerminos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamFuenteTitulo"
+        android:text="@string/terminos_y_condiciones" />
+
+    <Button
+        android:id="@+id/botonPublicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBoton"
+        android:textSize="@dimen/tamFuente4"
+        android:text="@string/publicar" />
+
+</LinearLayout>
